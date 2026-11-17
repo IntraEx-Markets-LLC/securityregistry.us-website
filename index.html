@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>SecurityRegistry.us</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+        .hero { background-color: #0b3d91; color: white; padding: 64px 32px; }
+        .section { padding: 48px 16px; }
+        .footer { background-color: #f1f1f1; padding: 32px; text-align: center; font-size: 14px; }
+      </style>
+  </head>
+  <body>
+
+    <!-- Hero Section -->
+    <header class="w3-container hero w3-center">
+      <h1 class="w3-xxxlarge">SecurityRegistry.us</h1>
+      <p class="w3-large">Immutable lifecycle registry for broker-dealer–managed exempt and public offerings</p>
+      <p>
+        <a href="#learn" class="w3-button w3-white w3-border w3-round-large">Learn More</a>
+        <a href="login.php" class="w3-button w3-white w3-border w3-round-large">Login</a>
+      </p>
+    </header>
+
+    <!-- About Section -->
+    <section class="w3-container section" id="learn">
+      <h2>What We Do</h2>
+      <p>SecurityRegistry.us is a posting and lifecycle registry platform designed for broker-dealers and issuers to manage exempt securities offerings under Florida Invest Local and federal exemptions.</p>
+      <ul class="w3-ul w3-card-4">
+        <li><strong>Issuer Transparency:</strong> Offerings are posted with full disclosure and jurisdictional tagging.</li>
+        <li><strong>Broker-Dealer Governance:</strong> Only registered broker-dealers manage RFQs and investor onboarding.</li>
+        <li><strong>Immutable Lifecycle Logging:</strong> All offering events are recorded for audit-traceable transparency.</li>
+        <li><strong>No Matching or Execution:</strong> SecurityRegistry.us does not facilitate trade execution or custody.</li>
+      </ul>
+    </section>
+
+    <!-- Compliance Section -->
+    <section class="w3-container section w3-light-grey">
+      <h2>Regulatory Clarity</h2>
+      <p>SecurityRegistry.us is not an ECN, ATS, or securities exchange. It does not match orders, execute trades, or hold customer assets. All transactions are conducted off-platform by registered broker-dealers or through National Market System (NMS) exchanges, in full accordance with applicable state and federal regulations. The platform serves solely as a lifecycle registry for offering events, RFQ postings, and immutable transaction records.</p>
+    </section>
+
+    <!-- Future Integration -->
+    <section class="w3-container section">
+      <h2>Future Integration</h2>
+      <p>The ELMX Exchange will utilize SecurityRegistry.us as its immutable transaction ledger, anchoring both exempt and public offerings with full lifecycle traceability, smart contract governance, and CAT/FIX reporting—without altering the registry’s core role as a broker-dealer–driven recordkeeping platform.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; <span id="year">2025</span> <a href="https://exemptliquiditymarket.exchange" target="_blank">INTRAEX MARKETS, LLC</a></p>
+      <p> — A lifecycle registry for broker-dealer–driven offerings.</p>
+      <p>This site does not facilitate execution, custody, or matching of securities. All transactions are managed by registered broker-dealers.</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+      window.onload = function() {
+        const year = new Date().getFullYear();
+        if (year > 2025) {
+          document.getElementById("year").innerText = `2025-${year}`;
+        }
+      }
+    </script>
+  </body>
+</html>
